@@ -1,0 +1,17 @@
+{
+    "name": "caseconverter",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "workbox": "workbox generateSW"
+    },
+    "author": "Aurelitec",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aurelitec/caseconverter.git"
+    },
+    "dependencies": {
+        "case": "^1.6.1"
+    }
+}
