@@ -21,9 +21,9 @@
                     </div>
 
                     <div class="navbar-end">
-                        <div class="navbar-item">
+                        <a class="navbar-item" href="https://www.east-tec.com/" target="_blank">
                             Sponsored by East-Tec
-                        </div>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -51,23 +51,26 @@
                 </div>
                 <div class="field">
                     <div class="control">
-                        <textarea class="textarea is-primary" placeholder="e.g. Hello world"></textarea>
+                        <textarea id="textarea" class="textarea is-primary" placeholder="e.g. Hello world">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</textarea>
                     </div>
                 </div>
 
                 <div class="buttons">
-                    <span id="lowercaseButton" class="button is-primary is-inverted is-outlined">lowercase</span>
-                    <span class="button is-primary is-inverted is-outlined">UPPERCASE</span>
-                    <span class="button is-primary is-inverted is-outlined">Sentence case</span>
-                    <span class="button is-primary is-inverted is-outlined">Title Case</span>
+                    <span id="lowercase" class="button is-primary is-inverted is-outlined">lowercase</span>
+                    <span id="uppercase" class="button is-primary is-inverted is-outlined">UPPERCASE</span>
+                    <span id="sentenceCase" class="button is-primary is-inverted is-outlined">Sentence case</span>
+                    <span id="titleCase" class="button is-primary is-inverted is-outlined">Title Case</span>
 
-                    <span class="button is-primary is-inverted is-outlined is-rounded">aLtErNaTiNg CaSe</span>
-                    <span class="button is-primary is-inverted is-outlined is-rounded">Swap case</span>
-                    <span class="button is-primary is-inverted is-outlined is-rounded">RaNDoM cAse</span>
+                    <span id="alternatingCase" class="button is-primary is-inverted is-outlined is-rounded">aLtErNaTiNg CaSe</span>
+                    <span id="swapCase" class="button is-primary is-inverted is-outlined is-rounded">Swap case</span>
+                    <span id="randomCase" class="button is-primary is-inverted is-outlined is-rounded">RaNDoM cAse</span>
 
-                    <span class="button is-primary is-inverted is-outlined is-small">camelCase</span>
-                    <span class="button is-primary is-inverted is-outlined is-small">PascalCase</span>
-                    <span class="button is-primary is-inverted is-outlined is-small">snake_case</span>
+                    <span id="camelCase" class="button is-primary is-inverted is-outlined is-small">camelCase</span>
+                    <span id="pascalCase" class="button is-primary is-inverted is-outlined is-small">PascalCase</span>
+                    <span id="snakeCase" class="button is-primary is-inverted is-outlined is-small">snake_case</span>
+                    <span id="kebabCase" class="button is-primary is-inverted is-outlined is-small">kebab-case</span>
+                    <span id="headerCase" class="button is-primary is-inverted is-outlined is-small">Header-Case</span>
+                    <span id="constantCase" class="button is-primary is-inverted is-outlined is-small">CONSTANT_CASE</span>
                 </div>
             </div>
         </div>
@@ -77,6 +80,8 @@
     <noscript>
         Please enable JavaScript to view this website.
     </noscript>
+
+    <script src="/scripts/lib/Case.min.js"></script>
     <script type="module" src="/scripts/app.js"></script>
 </body>
 
