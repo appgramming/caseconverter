@@ -1,6 +1,5 @@
 
 
-
 Case.type('alternate', s => s.replace(/[a-z]/gi,c=>c[`to${(s=!s)?'Low':'Upp'}erCase`]()));
 
 
@@ -30,3 +29,4 @@ initConvertButton("snakeCase", Case.snake);
 initConvertButton("kebabCase", Case.kebab);
 initConvertButton("headerCase", Case.header);
 initConvertButton("constantCase", Case.constant);
+
