@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <section class="hero is-medium is-primary">
+    <section class="hero is-primary is-medium is-bold">
         <div class="hero-head">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="/">
-                            Case Converter
+                            <img src="/assets/img/caseconverter-logo.png">
                         </a>
                     </div>
 
@@ -32,46 +32,56 @@
         <div class="hero-body">
             <div class="container">
 
-                <div class="buttons is-right">
-                    <a class="button is-primary is-inverted">
-                        <span class="icon is-small">
-                            <i class="fas fa-copy"></i>
-                        </span>
-                    </a>
-                    <a class="button is-primary is-inverted">
-                        <span class="icon is-small">
-                            <i class="fas fa-cut"></i>
-                        </span>
-                    </a>
-                    <a class="button is-primary is-inverted">
-                        <span class="icon is-small">
-                            <i class="fas fa-paste"></i>
-                        </span>
-                    </a>
-                </div>
+
                 <div class="field">
                     <div class="control">
-                        <textarea id="textarea" class="textarea is-primary" placeholder="e.g. Hello world">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</textarea>
+                        <textarea id="textarea" class="textarea is-primary"
+                            placeholder="e.g. Hello world">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</textarea>
                     </div>
                 </div>
 
-                <div class="buttons">
-                    <span id="lowercase" class="button is-primary is-inverted is-outlined">lowercase</span>
-                    <span id="uppercase" class="button is-primary is-inverted is-outlined">UPPERCASE</span>
-                    <span id="sentenceCase" class="button is-primary is-inverted is-outlined">Sentence case</span>
-                    <span id="titleCase" class="button is-primary is-inverted is-outlined">Title Case</span>
+                <div class="columns">
+                    <div class="column is-three-quarters">
+                        <div class="buttons">
+                            <span id="lowercase" class="button is-info">lowercase</span>
+                            <span id="uppercase" class="button is-info">UPPERCASE</span>
+                            <span id="sentenceCase" class="button is-info">Sentence case</span>
+                            <span id="titleCase" class="button is-info">Title Case</span>
 
-                    <span id="alternatingCase" class="button is-primary is-inverted is-outlined is-rounded">aLtErNaTiNg CaSe</span>
-                    <span id="swapCase" class="button is-primary is-inverted is-outlined is-rounded">Swap case</span>
-                    <span id="randomCase" class="button is-primary is-inverted is-outlined is-rounded">RaNDoM cAse</span>
+                            <span id="alternatingCase" class="button is-warning">aLtErNaTiNg CaSe</span>
+                            <span id="swapCase" class="button is-info is-warning">Swap case</span>
+                            <span id="randomCase" class="button is-info is-warning">RaNDoM cAse</span>
 
-                    <span id="camelCase" class="button is-primary is-inverted is-outlined is-small">camelCase</span>
-                    <span id="pascalCase" class="button is-primary is-inverted is-outlined is-small">PascalCase</span>
-                    <span id="snakeCase" class="button is-primary is-inverted is-outlined is-small">snake_case</span>
-                    <span id="kebabCase" class="button is-primary is-inverted is-outlined is-small">kebab-case</span>
-                    <span id="headerCase" class="button is-primary is-inverted is-outlined is-small">Header-Case</span>
-                    <span id="constantCase" class="button is-primary is-inverted is-outlined is-small">CONSTANT_CASE</span>
+                            <span id="camelCase" class="button is-light">camelCase</span>
+                            <span id="pascalCase" class="button is-light">PascalCase</span>
+                            <span id="snakeCase" class="button is-light">snake_case</span>
+                            <span id="kebabCase" class="button is-light">kebab-case</span>
+                            <span id="headerCase" class="button is-light">Header-Case</span>
+                            <span id="constantCase" class="button is-light">CONSTANT_CASE</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="buttons is-right">
+                            <a class="button is-primary is-inverted is-outlined is-medium">
+                                <span class="icon">
+                                    <i class="fas fa-copy fa-lg"></i>
+                                </span>
+                            </a>
+                            <a class="button is-primary is-inverted is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-cut"></i>
+                                </span>
+                            </a>
+                            <a class="button is-primary is-inverted is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-paste"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
 
