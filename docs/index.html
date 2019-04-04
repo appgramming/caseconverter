@@ -4,88 +4,100 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>CaseConverter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
-    <section class="hero is-primary is-medium is-bold">
-        <div class="hero-head">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="/">
-                            <img src="/assets/img/caseconverter-logo.png">
-                        </a>
-                    </div>
 
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="https://www.east-tec.com/" target="_blank">
-                            Sponsored by East-Tec
-                        </a>
-                    </div>
+    <section class="hero is-primary">
+        <div class="hero-head">
+            <div class="message is-warning is-marginless">
+                <div class="message-header is-radiusless is-justified-center">
+                    <p class="mr-1">Sponsored by east-tec Eraser. Protect your privacy, cover your tracks!</p>
+                    <a href="https://www.east-tec.com" class="button is-white" target="_blank">Free Download</a>
                 </div>
-            </nav>
+            </div>
         </div>
 
         <div class="hero-body">
-            <div class="container">
-
-
-                <div class="field">
-                    <div class="control">
-                        <textarea id="textarea" class="textarea is-primary"
-                            placeholder="e.g. Hello world">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</textarea>
-                    </div>
+            <div class="section">
+                <div class="container has-text-centered">
+                    <a href="/">
+                        <img src="/assets/img/caseconverter-logo.png" width="256">
+                    </a>
                 </div>
+            </div>
 
-                <div class="columns">
-                    <div class="column is-three-quarters">
-                        <div class="buttons">
-                            <span id="lowercase" class="button is-info">lowercase</span>
-                            <span id="uppercase" class="button is-info">UPPERCASE</span>
-                            <span id="sentenceCase" class="button is-info">Sentence case</span>
-                            <span id="titleCase" class="button is-info">Title Case</span>
+            <div class="section">
+                <div class="container">
 
-                            <span id="alternatingCase" class="button is-warning">aLtErNaTiNg CaSe</span>
-                            <span id="swapCase" class="button is-info is-warning">Swap case</span>
-                            <span id="randomCase" class="button is-info is-warning">RaNDoM cAse</span>
-
-                            <span id="camelCase" class="button is-light">camelCase</span>
-                            <span id="pascalCase" class="button is-light">PascalCase</span>
-                            <span id="snakeCase" class="button is-light">snake_case</span>
-                            <span id="kebabCase" class="button is-light">kebab-case</span>
-                            <span id="headerCase" class="button is-light">Header-Case</span>
-                            <span id="constantCase" class="button is-light">CONSTANT_CASE</span>
+                    <div class="field">
+                        <div class="control">
+                            <textarea id="textarea" class="textarea is-primary"
+                                placeholder="e.g. Hello world">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</textarea>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="buttons is-right">
-                            <a class="button is-primary is-inverted is-outlined is-medium">
-                                <span class="icon">
-                                    <i class="fas fa-copy fa-lg"></i>
-                                </span>
-                            </a>
-                            <a class="button is-primary is-inverted is-outlined">
-                                <span class="icon">
-                                    <i class="fas fa-cut"></i>
-                                </span>
-                            </a>
-                            <a class="button is-primary is-inverted is-outlined">
-                                <span class="icon">
-                                    <i class="fas fa-paste"></i>
-                                </span>
-                            </a>
+
+                    <div class="columns">
+                        <div class="column is-three-quarters">
+                            <div class="buttons">
+                                <span id="lowercase" class="button is-info">lowercase</span>
+                                <span id="uppercase" class="button is-info">UPPERCASE</span>
+                                <span id="sentenceCase" class="button is-info">Sentence case</span>
+                                <span id="titleCase" class="button is-info">Title Case</span>
+
+                                <span id="alternatingCase" class="button is-warning">aLtErNaTiNg CaSe</span>
+                                <span id="swapCase" class="button is-warning">Swap case</span>
+                                <span id="randomCase" class="button is-warning">RaNDoM cAse</span>
+
+                                <span id="camelCase" class="button is-light">camelCase</span>
+                                <span id="pascalCase" class="button is-light">PascalCase</span>
+                                <span id="snakeCase" class="button is-light">snake_case</span>
+                                <span id="kebabCase" class="button is-light">kebab-case</span>
+                                <span id="headerCase" class="button is-light">Header-Case</span>
+                                <span id="constantCase" class="button is-light">CONSTANT_CASE</span>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="buttons is-right">
+                                <a class="button is-primary is-inverted is-outlined is-medium">
+                                    <span class="icon">
+                                        <i class="fas fa-copy fa-lg"></i>
+                                    </span>
+                                </a>
+                                <a class="button is-primary is-inverted is-outlined">
+                                    <span class="icon">
+                                        <i class="fas fa-cut"></i>
+                                    </span>
+                                </a>
+                                <a class="button is-primary is-inverted is-outlined">
+                                    <span class="icon">
+                                        <i class="fas fa-paste"></i>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
             </div>
         </div>
 
     </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>CaseConverter</strong> by <a href="https://www.aurelitec.com">Aurelitec</a>. The source code is
+                licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+    </footer>
 
     <noscript>
         Please enable JavaScript to view this website.
