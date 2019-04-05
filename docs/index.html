@@ -16,9 +16,11 @@
 
 <body class="mdc-typography">
 
+    <!-- Top App Bar -->
     <header class="mdc-top-app-bar" data-mdc-auto-init="MDCTopAppBar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <a href="https://www.aurelitec.com" target="_blank" class="material-icons mdc-top-app-bar__navigation-icon">home</a>
                 <span class="mdc-top-app-bar__title">CaseConverter</span>
             </section>
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
@@ -29,13 +31,15 @@
         </div>
     </header>
 
-
+    <!-- Main content -->
     <main class="mdc-top-app-bar--fixed-adjust">
-        <div class="banner">
+
+        <!-- Banner -->
+        <div class="banner mdc-theme--secondary-bg mdc-theme--on-secondary">
             <p class="mr-1">
-                <a href="https://www.east-tec.com" target="_blank">East-Tec</a> pays <a
-                    href="https://github.com/helloworldwriter/" target="_blank">my</a> bills. Protect your privacy,
-                cover your tracks!
+                <a class="banner-link" href="https://www.east-tec.com" target="_blank">East-Tec</a>
+                pays <a class="banner-link" href="https://github.com/helloworldwriter/" target="_blank">my</a> bills.
+                Protect your privacy, cover your tracks!
             </p>
             <a class="mdc-button mdc-button--unelevated mdc-button--dense" data-mdc-auto-init="MDCRipple"
                 href="https://www.east-tec.com" target="_blank">
@@ -49,7 +53,8 @@
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
 
-                    <div class="textarea-wrapper">
+                    <!-- Textarea -->
+                    <section class="textarea-wrapper">
                         <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--fullwidth mdc-text-field--no-label"
                             data-mdc-auto-init="MDCTextField">
                             <textarea id="textarea" class="mdc-text-field__input" rows="8"
@@ -59,60 +64,68 @@
                                 <div class="mdc-notched-outline__trailing"></div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="buttons">
-
-                        <button id="lowercase" class="mdc-button mdc-button--unelevated convert-button"
+                    <!-- Convert buttons -->
+                    <section>
+                        <button id="lowercase" class="mdc-button mdc-button--raised convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">lowercase</span>
                         </button>
-                        <button id="uppercase" class="mdc-button mdc-button--unelevated convert-button"
+                        <button id="uppercase" class="mdc-button mdc-button--raised convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">UPPERCASE</span>
                         </button>
-                        <button id="sentenceCase" class="mdc-button mdc-button--unelevated convert-button"
+                        <button id="sentenceCase" class="mdc-button mdc-button--raised convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">Sentence case</span>
                         </button>
-                        <button id="titleCase" class="mdc-button mdc-button--unelevated convert-button"
+                        <button id="titleCase" class="mdc-button mdc-button--raised convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">Title Case</span>
                         </button>
 
-                        <button id="alternatingCase" class="mdc-button mdc-button--outlined convert-button"
+                        <button id="alternatingCase"
+                            class="mdc-button mdc-button--unelevated mdc-button--dense convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">aLtErNaTiNg CaSe</span>
                         </button>
-                        <button id="swapCase" class="mdc-button mdc-button--outlined convert-button"
+                        <button id="swapCase" class="mdc-button mdc-button--unelevated mdc-button--dense convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">Swap case</span>
                         </button>
-                        <button id="randomCase" class="mdc-button mdc-button--outlined convert-button"
+                        <button id="randomCase"
+                            class="mdc-button mdc-button--unelevated mdc-button--dense convert-button"
                             data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">RaNDoM cAse</span>
                         </button>
 
-                        <button id="camelCase" class="mdc-button convert-button" data-mdc-auto-init="MDCRipple">
+                        <button id="camelCase" class="mdc-button mdc-button--outlined mdc-button--dense convert-button"
+                            data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">camelCase</span>
                         </button>
-                        <button id="pascalCase" class="mdc-button convert-button" data-mdc-auto-init="MDCRipple">
+                        <button id="pascalCase" class="mdc-button mdc-button--outlined mdc-button--dense convert-button"
+                            data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">PascalCase</span>
                         </button>
-                        <button id="snakeCase" class="mdc-button convert-button" data-mdc-auto-init="MDCRipple">
+                        <button id="snakeCase" class="mdc-button mdc-button--outlined mdc-button--dense convert-button"
+                            data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">snake_case</span>
                         </button>
-                        <button id="kebabCase" class="mdc-button convert-button" data-mdc-auto-init="MDCRipple">
+                        <button id="kebabCase" class="mdc-button mdc-button--outlined mdc-button--dense convert-button"
+                            data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">kebab-case</span>
                         </button>
-                        <button id="headerCase" class="mdc-button convert-button" data-mdc-auto-init="MDCRipple">
+                        <button id="headerCase" class="mdc-button mdc-button--outlined mdc-button--dense convert-button"
+                            data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">Header-Case</span>
                         </button>
-                        <button id="constantCase" class="mdc-button convert-button" data-mdc-auto-init="MDCRipple">
+                        <button id="constantCase"
+                            class="mdc-button mdc-button--outlined mdc-button--dense convert-button"
+                            data-mdc-auto-init="MDCRipple">
                             <span class="mdc-button__label">CONSTANT_CASE</span>
                         </button>
-                    </div>
-
+                    </section>
 
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>

@@ -1,3 +1,7 @@
+:root {
+    --mdc-theme-secondary: #9d46ff;
+}
+
 .mr-1 {
     margin-right: 1rem;
 }
@@ -13,9 +17,15 @@
 
 .banner {
     align-items: center;
-    /* background-color: #ffdd57; */
-    background-color: #ffc107;
     display: flex;
+    height: 56px;
     justify-content: center;
     margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.banner-link {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
 }
