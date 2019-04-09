@@ -5,11 +5,11 @@
     "scripts": {
         "workbox": "workbox generateSW"
     },
-    "author": "Aurelitec",
+    "author": "Appgramming",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/aurelitec/caseconverter.git"
+        "url": "https://github.com/appgramming/caseconverter.git"
     },
     "dependencies": {
         "case": "^1.6.1"
